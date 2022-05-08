@@ -2,6 +2,11 @@
 # Copyright (c) 2021 Microsoft Corporation. Licensed under the MIT license. 
 # Set up custom environment before nearly anything else is imported
 # NOTE: this should be the first import (no not reorder)
+
+import os
+import sys
+sys.path.append(os.path.abspath(os.getcwd()))
+
 from maskrcnn_benchmark.utils.env import setup_environment  # noqa F401 isort:skip
 
 import argparse
